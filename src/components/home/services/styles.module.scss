@@ -70,10 +70,11 @@
 
 //SERVICE AREA
 
-.serviceTitle {
+.servicesTitle {
   text-transform: uppercase;
   color: #121212;
   margin: 40px 0 24px 0;
+  justify-content: center;
   text-align: center;
   font-size: 24px;
 }
@@ -82,6 +83,7 @@
   display: flex;
   gap: 24px;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 .service p {
@@ -114,5 +116,26 @@
 
   + p {
     font-weight: bold;
+  }
+}
+
+//RESPONSIVIDADE
+@media (min-width: 640px){
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .innerService{
+    width: 280px;
+    height: 200px;
+  }
+
+  .servicesTitle{
+    margin-top: 54px;
+    font-size: 30px;
   }
 }
