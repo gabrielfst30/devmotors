@@ -51,7 +51,7 @@ export default function Submenu({ menu }: SubMenuProp) {
         )}
 
         {menu.objects.map((item) => (
-          <li>
+          <li key={item.slug}>
             <Link href={`/post/${item.slug}`}>{item.title}</Link>
           </li>
         ))}
